@@ -45,6 +45,16 @@ public class UserServiceImpl implements UserService, UserDetailsService {
 		userRepository.save(user);
 	}
 
+    @Override
+    public List<User> findAll() {
+        return userRepository.findAll();
+    }
+
+	public List<Role> findAllRoles() {
+		return roleRepository.findAll();
+	}
+
+
 	@Override
 	@Transactional
 	public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {

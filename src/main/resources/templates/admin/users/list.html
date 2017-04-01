@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorator="layout">
+
+<head>
+    <title>Admin Users ListPage</title>
+
+</head>
+
+<body>
+<section layout:fragment="content">
+
+    <a href="/admin/users/create" class="btn btn-primary">Create User</a>
+
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel">
+                <div class="x_content">
+
+                    <table id="datatable" class="table table-striped table-bordered">
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                            <th>Action</th>
+                        </tr>
+
+                        <tr th:each="user : ${users}">
+                            <td th:text="${user.getName()}"></td>
+                            <td th:text="${user.getLastName()}"></td>
+                            <td th:text="${user.getEmail()}"></td>
+                            <td>
+                                <button type="submit" class="btn btn-success">Update</button>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorator="layout">
+
+<head>
+    <title>Admin Users ListPage</title>
+
+</head>
+
+<body>
+<section layout:fragment="content">
+
+
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel">
+                <div class="x_content">
+
+                    <form id="create-user" class="form-horizontal form-label-left" novalidate="" th:object="${user}" autocomplete="off" action="#" th:action="@{/admins/users/create}">
+
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">First Name <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" th:field="*{name}" id="name" required="required" class="form-control col-md-7 col-xs-12">
+                                <label th:if="${#fields.hasErrors('name')}" th:errors="*{name}"
+                                       class="validation-message"></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Last Name <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="control-label col-md-3 col-sm-3 col-xs-12">Email</label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input id="email" class="form-control col-md-7 col-xs-12" type="text" name="email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="roles" class="control-label col-md-3 col-sm-3 col-xs-12">Role</label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <select th:field="*{roles}" id="roles">
+
+                                    <option th:each="role : ${roles}"
+                                            th:value="${role.id}" th:text="${role.getRole()}">Credit card</option>
+                               </select>
+                            </div>
+                        </div>
+                        <div class="ln_solid"></div>
+                        <div class="form-group">
+                            <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                                <button type="submit" class="btn btn-success">Submit</button>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+</body>
+</html>
