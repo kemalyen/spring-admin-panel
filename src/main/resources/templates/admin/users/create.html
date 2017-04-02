@@ -17,7 +17,9 @@
             <div class="x_panel">
                 <div class="x_content">
 
-                    <form id="create-user" class="form-horizontal form-label-left" novalidate="" th:object="${user}" autocomplete="off" action="#" th:action="@{/admins/users/create}">
+                    <span th:utext="${successMessage}"></span>
+
+                    <form role="form" id="create-user" class="form-horizontal form-label-left" th:object="${user}" autocomplete="on" action="#" th:action="@{/admin/users/save}" method="post">
 
                         <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">First Name <span class="required">*</span>
@@ -32,23 +34,31 @@
                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Last Name <span class="required">*</span>
                             </label>
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
+                                <input type="text" id="last-name" th:field="*{lastName}" name="lastName" required="required" class="form-control col-md-7 col-xs-12">
+                                <label th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"
+                                       class="validation-message"></label>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="email" class="control-label col-md-3 col-sm-3 col-xs-12">Email</label>
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                <input id="email" class="form-control col-md-7 col-xs-12" type="text" name="email">
+                                <input id="email" class="form-control col-md-7 col-xs-12" type="text" name="email" th:field="*{email}">
+                                <label th:if="${#fields.hasErrors('email')}" th:errors="*{email}"
+                                       class="validation-message"></label>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="roles" class="control-label col-md-3 col-sm-3 col-xs-12">Role</label>
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                <select th:field="*{roles}" id="roles">
+                                <select th:field="*{roles}" id="roles" class="form-control">
 
                                     <option th:each="role : ${roles}"
-                                            th:value="${role.id}" th:text="${role.getRole()}">Credit card</option>
+                                            th:value="${role.id}" th:text="${role.getRole()}">Role</option>
                                </select>
+
+                                <label th:if="${#fields.hasErrors('roles')}" th:errors="*{roles}"
+                                       class="validation-message"></label>
+
                             </div>
                         </div>
                         <div class="ln_solid"></div>
