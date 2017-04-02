@@ -17,7 +17,7 @@
             <div class="x_panel">
                 <div class="x_content">
 
-                    <span th:utext="${successMessage}"></span>
+                    <div th:if=${successMessage} class="alert alert-warning" th:utext="${successMessage}"></div>
 
                     <form role="form" id="create-user" class="form-horizontal form-label-left" th:object="${user}" autocomplete="on" action="#" th:action="@{/admin/users/save}" method="post">
 
@@ -47,6 +47,16 @@
                                        class="validation-message"></label>
                             </div>
                         </div>
+
+                        <div class="form-group">
+                            <label for="email" class="control-label col-md-3 col-sm-3 col-xs-12">Password</label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input id="password" class="form-control col-md-7 col-xs-12" type="password" name="password" th:field="*{password}">
+                                <label th:if="${#fields.hasErrors('password')}" th:errors="*{password}"
+                                       class="validation-message"></label>
+                            </div>
+                        </div>
+
                         <div class="form-group">
                             <label for="roles" class="control-label col-md-3 col-sm-3 col-xs-12">Role</label>
                             <div class="col-md-6 col-sm-6 col-xs-12">

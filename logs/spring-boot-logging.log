@@ -237,3 +237,302 @@ Field error in object 'user' on field 'password': rejected value [null]; codes [
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.6.jar:8.5.6]
 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_45]
 
+2017-04-02 14:26:36.794  INFO 1673 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@dd8ba08: startup date [Sun Apr 02 13:47:48 EEST 2017]; root of context hierarchy
+2017-04-02 14:26:36.796  INFO 1673 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-04-02 14:26:36.798  INFO 1673 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-04-02 14:26:39.161  INFO 1812 --- [main] com.gazatem.ekip.Application             : Starting Application on Z0M5Q-iMac.local with PID 1812 (/Users/kemal/Documents/JAVA/apps/ekip/target/classes started by kemal in /Users/kemal/Documents/JAVA/apps/ekip)
+2017-04-02 14:26:39.173  INFO 1812 --- [main] com.gazatem.ekip.Application             : No active profile set, falling back to default profiles: default
+2017-04-02 14:26:39.807  INFO 1812 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@dd8ba08: startup date [Sun Apr 02 14:26:39 EEST 2017]; root of context hierarchy
+2017-04-02 14:26:41.611  INFO 1812 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a7e6f7bf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-02 14:26:42.102  INFO 1812 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-04-02 14:26:42.120  INFO 1812 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-04-02 14:26:42.122  INFO 1812 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-04-02 14:26:42.247  INFO 1812 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-04-02 14:26:42.247  INFO 1812 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2447 ms
+2017-04-02 14:26:42.470  INFO 1812 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-02 14:26:42.470  INFO 1812 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-02 14:26:42.471  INFO 1812 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-02 14:26:42.471  INFO 1812 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-02 14:26:42.473  INFO 1812 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-04-02 14:26:42.473  INFO 1812 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-02 14:26:42.765  INFO 1812 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-04-02 14:26:45.488  INFO 1812 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-04-02 14:26:46.784  INFO 1812 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/resources/**'], []
+2017-04-02 14:26:46.784  INFO 1812 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/**'], []
+2017-04-02 14:26:46.784  INFO 1812 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/vendors/**'], []
+2017-04-02 14:26:46.784  INFO 1812 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2017-04-02 14:26:46.784  INFO 1812 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2017-04-02 14:26:46.784  INFO 1812 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2017-04-02 14:26:46.894  INFO 1812 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@365e65bb, org.springframework.security.web.context.SecurityContextPersistenceFilter@685e6a68, org.springframework.security.web.header.HeaderWriterFilter@5368e981, org.springframework.security.web.authentication.logout.LogoutFilter@1c90029b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@761f234c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4e8d9bb6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ff5d4f1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@52f43225, org.springframework.security.web.session.SessionManagementFilter@79b7c350, org.springframework.security.web.access.ExceptionTranslationFilter@77ba583, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@36cfe107]
+2017-04-02 14:26:47.097  INFO 1812 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@dd8ba08: startup date [Sun Apr 02 14:26:39 EEST 2017]; root of context hierarchy
+2017-04-02 14:26:47.197  INFO 1812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.AdminController.home()
+2017-04-02 14:26:47.199  INFO 1812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/registration],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.LoginController.createNewUser(com.gazatem.ekip.model.User,org.springframework.validation.BindingResult)
+2017-04-02 14:26:47.199  INFO 1812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/registration],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.LoginController.registration()
+2017-04-02 14:26:47.199  INFO 1812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ || /login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.LoginController.login()
+2017-04-02 14:26:47.200  INFO 1812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tasks/my-tasks],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.TaskController.index()
+2017-04-02 14:26:47.200  INFO 1812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/users/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.UserController.index()
+2017-04-02 14:26:47.201  INFO 1812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/users/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.UserController.create()
+2017-04-02 14:26:47.201  INFO 1812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/users/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.UserController.save(com.gazatem.ekip.model.User,org.springframework.validation.BindingResult)
+2017-04-02 14:26:47.201  INFO 1812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/users/teams],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.UserController.teams()
+2017-04-02 14:26:47.204  INFO 1812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-02 14:26:47.205  INFO 1812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-02 14:26:47.242  INFO 1812 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-02 14:26:47.242  INFO 1812 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-02 14:26:47.334  INFO 1812 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-02 14:26:48.408  INFO 1812 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-04-02 14:26:48.527  INFO 1812 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-04-02 14:26:48.539  INFO 1812 --- [main] com.gazatem.ekip.Application             : Started Application in 10.045 seconds (JVM running for 10.832)
+2017-04-02 14:30:36.324  INFO 1812 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-04-02 14:30:36.324  INFO 1812 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-04-02 14:30:36.339  INFO 1812 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2017-04-02 14:30:49.301  INFO 1812 --- [http-nio-8080-exec-8] c.g.ekip.controller.UserController       : This is a debug message
+2017-04-02 14:30:49.365  INFO 1812 --- [http-nio-8080-exec-8] c.g.ekip.controller.UserController       : This is a error message
+2017-04-02 14:30:49.367 ERROR 1812 --- [http-nio-8080-exec-8] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-8] Exception processing template "admin/users/createorg.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'user' on field 'email': rejected value [kemal@piklook.com]; codes [error.user.user.email,error.user.email,error.user.java.lang.String,error.user]; arguments []; default message [There is already a user registered with the email provided]": Error resolving template "admin/users/createorg.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'user' on field 'email': rejected value [kemal@piklook.com]; codes [error.user.user.email,error.user.email,error.user.java.lang.String,error.user]; arguments []; default message [There is already a user registered with the email provided]", template might not exist or might not be accessible by any of the configured Template Resolvers
+2017-04-02 14:30:49.376 ERROR 1812 --- [http-nio-8080-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template "admin/users/createorg.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'user' on field 'email': rejected value [kemal@piklook.com]; codes [error.user.user.email,error.user.email,error.user.java.lang.String,error.user]; arguments []; default message [There is already a user registered with the email provided]", template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template "admin/users/createorg.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'user' on field 'email': rejected value [kemal@piklook.com]; codes [error.user.user.email,error.user.email,error.user.java.lang.String,error.user]; arguments []; default message [There is already a user registered with the email provided]", template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.TemplateRepository.getTemplate(TemplateRepository.java:246) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1104) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335) ~[thymeleaf-spring4-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring4-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1257) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317) ~[spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127) ~[spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) ~[spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:115) ~[spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:169) ~[spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200) ~[spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:121) ~[spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66) ~[spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214) ~[spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177) ~[spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:89) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:784) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:802) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1410) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_45]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_45]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_45]
+
+2017-04-02 14:31:09.127  INFO 1812 --- [http-nio-8080-exec-5] c.g.ekip.controller.UserController       : This is a debug message
+2017-04-02 14:32:38.167  INFO 1812 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@dd8ba08: startup date [Sun Apr 02 14:26:39 EEST 2017]; root of context hierarchy
+2017-04-02 14:32:38.169  INFO 1812 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-04-02 14:32:38.172  INFO 1812 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-04-02 14:32:41.111  INFO 1842 --- [main] com.gazatem.ekip.Application             : Starting Application on Z0M5Q-iMac.local with PID 1842 (/Users/kemal/Documents/JAVA/apps/ekip/target/classes started by kemal in /Users/kemal/Documents/JAVA/apps/ekip)
+2017-04-02 14:32:41.119  INFO 1842 --- [main] com.gazatem.ekip.Application             : No active profile set, falling back to default profiles: default
+2017-04-02 14:32:41.651  INFO 1842 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@dd8ba08: startup date [Sun Apr 02 14:32:41 EEST 2017]; root of context hierarchy
+2017-04-02 14:32:43.436  INFO 1842 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1491cc9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-02 14:32:43.903  INFO 1842 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-04-02 14:32:43.916  INFO 1842 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-04-02 14:32:43.918  INFO 1842 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-04-02 14:32:44.033  INFO 1842 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-04-02 14:32:44.033  INFO 1842 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2387 ms
+2017-04-02 14:32:44.239  INFO 1842 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-02 14:32:44.240  INFO 1842 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-02 14:32:44.240  INFO 1842 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-02 14:32:44.240  INFO 1842 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-02 14:32:44.242  INFO 1842 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-04-02 14:32:44.242  INFO 1842 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-02 14:32:44.531  INFO 1842 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-04-02 14:32:46.549  INFO 1842 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-04-02 14:32:47.349  INFO 1842 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/resources/**'], []
+2017-04-02 14:32:47.349  INFO 1842 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/**'], []
+2017-04-02 14:32:47.349  INFO 1842 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/vendors/**'], []
+2017-04-02 14:32:47.350  INFO 1842 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2017-04-02 14:32:47.350  INFO 1842 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2017-04-02 14:32:47.350  INFO 1842 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2017-04-02 14:32:47.436  INFO 1842 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@61554b6b, org.springframework.security.web.context.SecurityContextPersistenceFilter@9e50283, org.springframework.security.web.header.HeaderWriterFilter@6f7a20da, org.springframework.security.web.authentication.logout.LogoutFilter@2d07aacc, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@362a6aa5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c171746, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@685e6a68, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@761f234c, org.springframework.security.web.session.SessionManagementFilter@77ba583, org.springframework.security.web.access.ExceptionTranslationFilter@6253e59a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@20890a1a]
+2017-04-02 14:32:47.575  INFO 1842 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@dd8ba08: startup date [Sun Apr 02 14:32:41 EEST 2017]; root of context hierarchy
+2017-04-02 14:32:47.671  INFO 1842 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.AdminController.home()
+2017-04-02 14:32:47.672  INFO 1842 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ || /login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.LoginController.login()
+2017-04-02 14:32:47.673  INFO 1842 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/registration],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.LoginController.createNewUser(com.gazatem.ekip.model.User,org.springframework.validation.BindingResult)
+2017-04-02 14:32:47.673  INFO 1842 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/registration],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.LoginController.registration()
+2017-04-02 14:32:47.674  INFO 1842 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tasks/my-tasks],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.TaskController.index()
+2017-04-02 14:32:47.681  INFO 1842 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/users/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.UserController.index()
+2017-04-02 14:32:47.681  INFO 1842 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/users/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.UserController.create()
+2017-04-02 14:32:47.682  INFO 1842 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/users/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.UserController.save(com.gazatem.ekip.model.User,org.springframework.validation.BindingResult)
+2017-04-02 14:32:47.682  INFO 1842 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/users/teams],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.UserController.teams()
+2017-04-02 14:32:47.690  INFO 1842 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-02 14:32:47.690  INFO 1842 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-02 14:32:47.724  INFO 1842 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-02 14:32:47.725  INFO 1842 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-02 14:32:47.769  INFO 1842 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-02 14:32:48.597  INFO 1842 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-04-02 14:32:48.664  INFO 1842 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-04-02 14:32:48.670  INFO 1842 --- [main] com.gazatem.ekip.Application             : Started Application in 8.49 seconds (JVM running for 8.99)
+2017-04-02 14:33:47.498  INFO 1842 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-04-02 14:33:47.498  INFO 1842 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-04-02 14:33:47.513  INFO 1842 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2017-04-02 14:34:00.720  INFO 1842 --- [http-nio-8080-exec-7] c.g.ekip.controller.UserController       : This is a debug message
+2017-04-02 14:34:14.596  INFO 1842 --- [http-nio-8080-exec-10] c.g.ekip.controller.UserController       : This is a debug message
+2017-04-02 14:34:14.606  INFO 1842 --- [http-nio-8080-exec-10] c.g.ekip.controller.UserController       : This is a error messageorg.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'user' on field 'email': rejected value [kemal@piklook.com]; codes [error.user.user.email,error.user.email,error.user.java.lang.String,error.user]; arguments []; default message [There is already a user registered with the email provided]
+2017-04-02 14:34:29.705  INFO 1842 --- [http-nio-8080-exec-3] c.g.ekip.controller.UserController       : This is a debug message
+2017-04-02 14:34:29.713  INFO 1842 --- [http-nio-8080-exec-3] c.g.ekip.controller.UserController       : This is a error messageorg.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'user' on field 'email': rejected value [kemal@piklook.com]; codes [error.user.user.email,error.user.email,error.user.java.lang.String,error.user]; arguments []; default message [There is already a user registered with the email provided]
+2017-04-02 14:35:05.598  INFO 1842 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@dd8ba08: startup date [Sun Apr 02 14:32:41 EEST 2017]; root of context hierarchy
+2017-04-02 14:35:05.599  INFO 1842 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-04-02 14:35:05.605  INFO 1842 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-04-02 14:35:07.755  INFO 1850 --- [main] com.gazatem.ekip.Application             : Starting Application on Z0M5Q-iMac.local with PID 1850 (/Users/kemal/Documents/JAVA/apps/ekip/target/classes started by kemal in /Users/kemal/Documents/JAVA/apps/ekip)
+2017-04-02 14:35:07.758  INFO 1850 --- [main] com.gazatem.ekip.Application             : No active profile set, falling back to default profiles: default
+2017-04-02 14:35:08.345  INFO 1850 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@dd8ba08: startup date [Sun Apr 02 14:35:08 EEST 2017]; root of context hierarchy
+2017-04-02 14:35:10.253  INFO 1850 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1eab4c19] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-02 14:35:10.828  INFO 1850 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-04-02 14:35:10.846  INFO 1850 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-04-02 14:35:10.847  INFO 1850 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-04-02 14:35:10.964  INFO 1850 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-04-02 14:35:10.964  INFO 1850 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2623 ms
+2017-04-02 14:35:11.166  INFO 1850 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-02 14:35:11.167  INFO 1850 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-02 14:35:11.167  INFO 1850 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-02 14:35:11.168  INFO 1850 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-02 14:35:11.169  INFO 1850 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-04-02 14:35:11.169  INFO 1850 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-02 14:35:11.447  INFO 1850 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-04-02 14:35:13.549  INFO 1850 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-04-02 14:35:14.414  INFO 1850 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/resources/**'], []
+2017-04-02 14:35:14.414  INFO 1850 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/**'], []
+2017-04-02 14:35:14.414  INFO 1850 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/vendors/**'], []
+2017-04-02 14:35:14.415  INFO 1850 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2017-04-02 14:35:14.415  INFO 1850 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2017-04-02 14:35:14.415  INFO 1850 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2017-04-02 14:35:14.540  INFO 1850 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@687b0ddc, org.springframework.security.web.context.SecurityContextPersistenceFilter@1c171746, org.springframework.security.web.header.HeaderWriterFilter@77ba583, org.springframework.security.web.authentication.logout.LogoutFilter@194224ca, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@139089a4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@586737ff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4e8d9bb6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42b4df5a, org.springframework.security.web.session.SessionManagementFilter@6851b296, org.springframework.security.web.access.ExceptionTranslationFilter@16ccd2bc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@78bad03b]
+2017-04-02 14:35:14.834  INFO 1850 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@dd8ba08: startup date [Sun Apr 02 14:35:08 EEST 2017]; root of context hierarchy
+2017-04-02 14:35:14.942  INFO 1850 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.AdminController.home()
+2017-04-02 14:35:14.944  INFO 1850 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ || /login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.LoginController.login()
+2017-04-02 14:35:14.945  INFO 1850 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/registration],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.LoginController.createNewUser(com.gazatem.ekip.model.User,org.springframework.validation.BindingResult)
+2017-04-02 14:35:14.946  INFO 1850 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/registration],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.LoginController.registration()
+2017-04-02 14:35:14.946  INFO 1850 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tasks/my-tasks],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.TaskController.index()
+2017-04-02 14:35:14.947  INFO 1850 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/users/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.UserController.index()
+2017-04-02 14:35:14.947  INFO 1850 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/users/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.UserController.create()
+2017-04-02 14:35:14.948  INFO 1850 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/users/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.UserController.save(com.gazatem.ekip.model.User,org.springframework.validation.BindingResult)
+2017-04-02 14:35:14.948  INFO 1850 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/users/teams],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.UserController.teams()
+2017-04-02 14:35:14.951  INFO 1850 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-02 14:35:14.952  INFO 1850 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-02 14:35:15.003  INFO 1850 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-02 14:35:15.004  INFO 1850 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-02 14:35:15.081  INFO 1850 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-02 14:35:15.838  INFO 1850 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-04-02 14:35:15.910  INFO 1850 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-04-02 14:35:15.916  INFO 1850 --- [main] com.gazatem.ekip.Application             : Started Application in 9.085 seconds (JVM running for 9.634)
+2017-04-02 14:37:00.825  INFO 1850 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-04-02 14:37:00.825  INFO 1850 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-04-02 14:37:00.842  INFO 1850 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2017-04-02 14:38:44.618  INFO 1850 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@dd8ba08: startup date [Sun Apr 02 14:35:08 EEST 2017]; root of context hierarchy
+2017-04-02 14:38:44.620  INFO 1850 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-04-02 14:38:44.622  INFO 1850 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-04-02 14:38:46.992  INFO 1871 --- [main] com.gazatem.ekip.Application             : Starting Application on Z0M5Q-iMac.local with PID 1871 (/Users/kemal/Documents/JAVA/apps/ekip/target/classes started by kemal in /Users/kemal/Documents/JAVA/apps/ekip)
+2017-04-02 14:38:47.002  INFO 1871 --- [main] com.gazatem.ekip.Application             : No active profile set, falling back to default profiles: default
+2017-04-02 14:38:47.438  INFO 1871 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@dd8ba08: startup date [Sun Apr 02 14:38:47 EEST 2017]; root of context hierarchy
+2017-04-02 14:38:49.006  INFO 1871 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1491cc9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-02 14:38:49.515  INFO 1871 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-04-02 14:38:49.539  INFO 1871 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-04-02 14:38:49.541  INFO 1871 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-04-02 14:38:49.657  INFO 1871 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-04-02 14:38:49.657  INFO 1871 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2226 ms
+2017-04-02 14:38:49.867  INFO 1871 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-02 14:38:49.867  INFO 1871 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-02 14:38:49.867  INFO 1871 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-02 14:38:49.867  INFO 1871 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-02 14:38:49.869  INFO 1871 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-04-02 14:38:49.869  INFO 1871 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-02 14:38:50.152  INFO 1871 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-04-02 14:38:53.347  INFO 1871 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-04-02 14:38:54.174  INFO 1871 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/resources/**'], []
+2017-04-02 14:38:54.174  INFO 1871 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/**'], []
+2017-04-02 14:38:54.175  INFO 1871 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/vendors/**'], []
+2017-04-02 14:38:54.175  INFO 1871 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2017-04-02 14:38:54.175  INFO 1871 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2017-04-02 14:38:54.175  INFO 1871 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2017-04-02 14:38:54.264  INFO 1871 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@61554b6b, org.springframework.security.web.context.SecurityContextPersistenceFilter@9e50283, org.springframework.security.web.header.HeaderWriterFilter@6f7a20da, org.springframework.security.web.authentication.logout.LogoutFilter@2d07aacc, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@362a6aa5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c171746, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@685e6a68, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@761f234c, org.springframework.security.web.session.SessionManagementFilter@77ba583, org.springframework.security.web.access.ExceptionTranslationFilter@6253e59a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@20890a1a]
+2017-04-02 14:38:54.415  INFO 1871 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@dd8ba08: startup date [Sun Apr 02 14:38:47 EEST 2017]; root of context hierarchy
+2017-04-02 14:38:54.512  INFO 1871 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.AdminController.home()
+2017-04-02 14:38:54.513  INFO 1871 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ || /login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.LoginController.login()
+2017-04-02 14:38:54.514  INFO 1871 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/registration],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.LoginController.createNewUser(com.gazatem.ekip.model.User,org.springframework.validation.BindingResult)
+2017-04-02 14:38:54.514  INFO 1871 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/registration],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.LoginController.registration()
+2017-04-02 14:38:54.514  INFO 1871 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tasks/my-tasks],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.TaskController.index()
+2017-04-02 14:38:54.515  INFO 1871 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/users/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.UserController.index()
+2017-04-02 14:38:54.515  INFO 1871 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/users/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.UserController.create()
+2017-04-02 14:38:54.516  INFO 1871 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/users/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.UserController.save(com.gazatem.ekip.model.User,org.springframework.validation.BindingResult)
+2017-04-02 14:38:54.516  INFO 1871 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/users/teams],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gazatem.ekip.controller.UserController.teams()
+2017-04-02 14:38:54.519  INFO 1871 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-02 14:38:54.520  INFO 1871 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-02 14:38:54.557  INFO 1871 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-02 14:38:54.558  INFO 1871 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-02 14:38:54.604  INFO 1871 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-02 14:38:55.415  INFO 1871 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-04-02 14:38:55.534  INFO 1871 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-04-02 14:38:55.540  INFO 1871 --- [main] com.gazatem.ekip.Application             : Started Application in 9.508 seconds (JVM running for 10.159)
+2017-04-02 14:39:28.060  INFO 1871 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-04-02 14:39:28.061  INFO 1871 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-04-02 14:39:28.081  INFO 1871 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2017-04-02 14:39:37.651  INFO 1871 --- [http-nio-8080-exec-4] c.g.ekip.controller.UserController       : This is a debug message
+2017-04-02 14:39:37.698  INFO 1871 --- [http-nio-8080-exec-4] c.g.ekip.controller.UserController       : This is a error messageorg.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'user' on field 'email': rejected value [kemal@piklook.com]; codes [error.user.user.email,error.user.email,error.user.java.lang.String,error.user]; arguments []; default message [There is already a user registered with the email provided]
+2017-04-02 14:39:47.306  INFO 1871 --- [http-nio-8080-exec-9] c.g.ekip.controller.UserController       : This is a debug message

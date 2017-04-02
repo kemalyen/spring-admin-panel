@@ -77,8 +77,8 @@ public class UserController {
                             "There is already a user registered with the email provided");
         }
         if (bindingResult.hasErrors()) {
-            logger.info("This is a error message");
-            modelAndView.setViewName("admin/users/create" + bindingResult.toString());
+            logger.info("This is a error message"  + bindingResult.toString());
+            modelAndView.setViewName("admin/users/create");
         } else {
             userService.createUser(user);
             modelAndView.addObject("successMessage", "User has been registered successfully");
